@@ -1,19 +1,8 @@
-for (i=1; i <= 10; i++) {
+var pid = document.getElementsByTagName("p");
 
-    if (i == 5 || i == 7 || i == 8){
-        continue;
+for (i=0; i < pid.length; i++) {
 
-    }
+    pid[i].id = "paragraph-"+i;
+    document.write("paragraph-"+i);
 
-    document.write(i);
-    console.log(i);
-
-    if (i == 9) {
-        
-        document.write("loop broken");
-        console.log("loop broken");
-        break;
-
-    }
-    
 }
