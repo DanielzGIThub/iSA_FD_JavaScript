@@ -1,19 +1,27 @@
-function multiply(j,k) {
+/*var someVar = 9; //global variable
 
-    var multiplyResult = j * k;
-    console.log(multiplyResult);
-    document.write(multiplyResult);
-    return multiplyResult;
+function someFunc (){
+
+    someVar += 7; //using global variable inside the function
+    return someVar
 }
 
-var func = multiply(3,8);
 
-var num = 5;
+console.log(someFunc());
+console.log(someVar); // result 16 in memory
+document.write(someFunc());
+document.write(someVar); //result 23*/
 
-num = num + func;
+var someVar2 = 9;
 
-console.log(num);
-document.write(num);
+function nextFunc(){
 
-console.log(func);
-document.write(func);
+    var someVar3 = someVar2 + 7; //someVar3 local variable
+    return someVar3;
+
+}
+
+console.log(nextFunc());
+console.log(someVar2); // 
+document.write(nextFunc());
+//document.write(someVar3); //ReferenceError: someVar3 is not defined
