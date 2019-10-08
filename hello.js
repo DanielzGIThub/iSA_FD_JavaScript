@@ -1,15 +1,15 @@
-var number = 48;
 
-alert(++number);
+var myVar = Boolean("");
+alert(myVar);
 
-alert(number++); //will display the result after new variable call
+var myVar = "7 < 9 : " + Boolean(7 < 9);
+alert(myVar);
 
-alert(number)
+var myVar = "5 == 5" + Boolean(5 == 5);
+alert(myVar);
 
-alert(number+=10);
+var myVar = "'Hello' : " + Boolean("Hello");
+alert(myVar);
 
-alert(number-=10);
-
-alert(number/=4);
-
-alert(number*=4);
+var myVar = "0 : " + Boolean(0);
+alert(myVar);
