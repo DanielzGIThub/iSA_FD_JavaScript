@@ -1,27 +1,13 @@
-var a = "number";
-
-var b = 5;
-
-console.log(a + b); //result is not a number. It is a string
+var myString = "I\'m writing some 'string' text";
 
 
-var c = "6";
+console.log(myString);
+console.log(myString.length);
+console.log(myString.toUpperCase());
+console.log(myString.toLowerCase());
+console.log(myString.indexOf("string"));
+console.log(myString.indexOf("fun")); //result -1
 
-var d = 5;
+var myString2 = "i\'m writing some 'string' text";
 
-console.log(c + d);
-
-
-//NaN means Not a Number
-if (isNaN(a)){
-    console.log("not a number");
-} else {
-    console.log("It is a number");
-}
-
-//NaN means Not a Number
-if (!isNaN(a)){
-    console.log("It is a numberrr");
-} else {
-    console.log("not a numberrr");
-}
+console.log(myString < myString2); 
