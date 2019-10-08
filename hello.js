@@ -1,8 +1,8 @@
 var hello = "Hello World!";
 
-alert(hello);
+var number = 48;
 
-var hello = "20"
-
-alert(hello); //read from top to bottom
-
+alert(hello + number);
+//alert(hello / number); //does not work
+//alert(hello * number); //does not work
+// alert(hello - number); //does not work
