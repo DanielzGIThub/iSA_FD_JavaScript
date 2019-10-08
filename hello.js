@@ -1,8 +1,19 @@
-var pid = document.getElementsByTagName("p");
+function multiply(j,k) {
 
-for (i=0; i < pid.length; i++) {
-
-    pid[i].id = "paragraph-"+i;
-    document.write("paragraph-"+i);
-
+    var multiplyResult = j * k;
+    console.log(multiplyResult);
+    document.write(multiplyResult);
+    return multiplyResult;
 }
+
+var func = multiply(3,8);
+
+var num = 5;
+
+num = num + func;
+
+console.log(num);
+document.write(num);
+
+console.log(func);
+document.write(func);
