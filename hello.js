@@ -1,26 +1,27 @@
-var a = 5.2;
-var b = 8;
+var a = "number";
 
-console.log(Math.round(a));
-console.log(Math.max(a,b));
-console.log(Math.min(a,b));
-console.log(Math.floor(a));
-console.log(Math.ceil(a));
+var b = 5;
 
-function func(){
-    return a;
+console.log(a + b); //result is not a number. It is a string
+
+
+var c = "6";
+
+var d = 5;
+
+console.log(c + d);
+
+
+//NaN means Not a Number
+if (isNaN(a)){
+    console.log("not a number");
+} else {
+    console.log("It is a number");
 }
 
-var c = false;
-var d = 5.2322
-var e = "4.76"
-var f = e
-var g = func()
-
-
-console.log(typeof(c));
-console.log(typeof(d));
-console.log(typeof(e));
-console.log(typeof(f));
-console.log(typeof(g));
-console.log(typeof(func));
+//NaN means Not a Number
+if (!isNaN(a)){
+    console.log("It is a numberrr");
+} else {
+    console.log("not a numberrr");
+}
