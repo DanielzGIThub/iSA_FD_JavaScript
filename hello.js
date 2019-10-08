@@ -1,21 +1,17 @@
-var myPocketContent = '100';
+var temperature = 25;
 
-if (myPocketContent === 100 || myPocketContent === '100'){
-
-    document.write("You have got in your pocket 100");
-
-} else {
-
-    document.write("Check your pocket");
-
+while (temperature > 15){
+    console.log("We can go outside");
+    document.write("We can go outside");
+    --temperature;
 }
 
-if (myPocketContent !== 100 && myPocketContent !== 1000){
+var sunnyDay = true;
 
-    document.write("You have not got in your pocket 100 & 1000");
-
-} else {
-
-    document.write("Check your pocket");
-
+while (sunnyDay){
+    console.log("We can go outside");
+    document.write("We can go outside");
+    break; 
 }
+
+document.write("while loop stopped")
