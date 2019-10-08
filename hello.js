@@ -1,13 +1,9 @@
 var myString = "I\'m writing some 'string' text";
 
+var string2 = myString.slice(3,24);
 
-console.log(myString);
-console.log(myString.length);
-console.log(myString.toUpperCase());
-console.log(myString.toLowerCase());
-console.log(myString.indexOf("string"));
-console.log(myString.indexOf("fun")); //result -1
+console.log(string2);
 
-var myString2 = "i\'m writing some 'string' text";
+var string3 = myString.split(" "); //array is obtained
 
-console.log(myString < myString2); 
+console.log(string3);
