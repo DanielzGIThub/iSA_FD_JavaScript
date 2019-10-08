@@ -1,27 +1,26 @@
-/*var someVar = 9; //global variable
+var a = 5.2;
+var b = 8;
 
-function someFunc (){
+console.log(Math.round(a));
+console.log(Math.max(a,b));
+console.log(Math.min(a,b));
+console.log(Math.floor(a));
+console.log(Math.ceil(a));
 
-    someVar += 7; //using global variable inside the function
-    return someVar
+function func(){
+    return a;
 }
 
+var c = false;
+var d = 5.2322
+var e = "4.76"
+var f = e
+var g = func()
 
-console.log(someFunc());
-console.log(someVar); // result 16 in memory
-document.write(someFunc());
-document.write(someVar); //result 23*/
 
-var someVar2 = 9;
-
-function nextFunc(){
-
-    var someVar3 = someVar2 + 7; //someVar3 local variable
-    return someVar3;
-
-}
-
-console.log(nextFunc());
-console.log(someVar2); // 
-document.write(nextFunc());
-//document.write(someVar3); //ReferenceError: someVar3 is not defined
+console.log(typeof(c));
+console.log(typeof(d));
+console.log(typeof(e));
+console.log(typeof(f));
+console.log(typeof(g));
+console.log(typeof(func));
