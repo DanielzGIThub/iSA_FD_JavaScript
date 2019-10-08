@@ -1,15 +1,28 @@
+var myVar = false;
 
-var myVar = Boolean("");
-alert(myVar);
+if (myVar){
+    document.write("myVar is true")
+} else{
+    document.write("myVar is false")
+}
 
-var myVar = "7 < 9 : " + Boolean(7 < 9);
-alert(myVar);
+var myVar = true;
 
-var myVar = "5 == 5" + Boolean(5 == 5);
-alert(myVar);
+if (myVar){
+    document.write("myVar is true")
+} else{
+    document.write("myVar is false")
+}
 
-var myVar = "'Hello' : " + Boolean("Hello");
-alert(myVar);
 
-var myVar = "0 : " + Boolean(0);
-alert(myVar);
+if (7 == '7'){
+    document.write("7 == '7' is true")
+} else{
+    document.write("7 == '7' is false")
+}
+
+if (7 === '7'){
+    document.write("7 === '7' is true")
+} else{
+    document.write("7 === '7' is false")
+}
