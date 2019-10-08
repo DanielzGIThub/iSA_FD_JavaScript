@@ -1,20 +1,21 @@
-var myPocketContent = 60;
+var myPocketContent = '100';
 
-if (myPocketContent > 100){
+if (myPocketContent === 100){
 
-    document.write("You have got in your pocket more than 100");
+    document.write("You have got in your pocket 100");
 
-} else if(myPocketContent > 80){
+} else {
 
-    document.write("You have got in your pocket more than 80");
-
-} else if(myPocketContent > 50){
-
-    document.write("You have got in your pocket more than 50");
-
-} else if(myPocketContent <= 50){
-
-    document.write("You have got in your pocket not more than 50");
+    document.write("You have got in your pocket '100'");
 
 }
 
+if (myPocketContent !== '100'){
+
+    document.write("You have got in your pocket 100");
+
+} else {
+
+    document.write("Check your pocket");
+
+}
