@@ -1,17 +1,9 @@
-var temperature = 25;
+var paragraphs = document.getElementsByTagName("p");
 
-while (temperature > 15){
-    console.log("We can go outside");
-    document.write("We can go outside");
-    --temperature;
+document.write("paragraphs length " + paragraphs.length)
+
+for (i=1; i <= paragraphs.length; i++) {
+
+    document.write("paragraphs number " + i);
+    
 }
-
-var sunnyDay = true;
-
-while (sunnyDay){
-    console.log("We can go outside");
-    document.write("We can go outside");
-    break; 
-}
-
-document.write("while loop stopped")
