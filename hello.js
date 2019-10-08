@@ -1,8 +1,15 @@
-var hello = "Hello World!";
-
 var number = 48;
 
-alert(hello + number);
-//alert(hello / number); //does not work
-//alert(hello * number); //does not work
-// alert(hello - number); //does not work
+alert(++number);
+
+alert(number++); //will display the result after new variable call
+
+alert(number)
+
+alert(number+=10);
+
+alert(number-=10);
+
+alert(number/=4);
+
+alert(number*=4);
