@@ -1,9 +1,19 @@
-var paragraphs = document.getElementsByTagName("p");
+for (i=1; i <= 10; i++) {
 
-document.write("paragraphs length " + paragraphs.length)
+    if (i == 5 || i == 7 || i == 8){
+        continue;
 
-for (i=1; i <= paragraphs.length; i++) {
+    }
 
-    document.write("paragraphs number " + i);
+    document.write(i);
+    console.log(i);
+
+    if (i == 9) {
+        
+        document.write("loop broken");
+        console.log("loop broken");
+        break;
+
+    }
     
 }
