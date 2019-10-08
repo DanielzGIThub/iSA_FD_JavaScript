@@ -1,6 +1,8 @@
-alert("Hello World!, World!, Hello World!, Hello World!, Hello World!, Hello World!, Hello World!, Hello World!, Hello World!, Hello World!,  Hello World!, Hello World!, ");
+var hello = "Hello World!";
 
-alert(Hello) //no commas
+alert(hello);
 
-Alert("Hello") //capitalized -case sinsitive, no semi-colon
+var hello = "20"
+
+alert(hello); //read from top to bottom
 
