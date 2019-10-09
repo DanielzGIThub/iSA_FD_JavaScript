@@ -22,9 +22,13 @@ var flat2 = {
 
     numberOfRooms: 5,
     furnitures: "chairs",
-    location: function(code, city){console.log("Poland " + " " + code + " " + city)}
+    location: function(code, city){console.log("Poland " + " " + code + " " + city)},
+    test: function(){console.log(this)},
+    infoOnLocation: function(){console.log(this.location())}
 
 };
 
 console.log(flat2.furnitures);
 flat2.location("83-000", "Gdansk");
+flat2.test();
+flat2.infoOnLocation();
