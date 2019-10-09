@@ -1,17 +1,16 @@
-console.log(document.getElementsByClassName("lorem"));
+var myBody = document.getElementsByTagName("body");
 
-var ps = document.getElementsByClassName("lorem");
+console.log(myBody[0].innerHTML);
 
-console.log(ps);
+var div_tag = myBody[0].getElementsByTagName("div");
 
+console.log(div_tag[0]);
 
+var p_tag = div_tag[0].getElementsByTagName("p");
 
-ps[1].innerHTML = "change";
+console.log(p_tag);
 
+p_tag[4].innerHTML = "Next change"
+console.log(p_tag[0].textContent);
 
-var myHeading = document.getElementById("678");
-
-
-myHeading.innerHTML = "Corrected Heading";
-
-
+p_tag[0].textContent = "Easy busy lemon squeezer";
