@@ -13,3 +13,10 @@ link[0].setAttribute("style", "color: red;");
 console.log(link[0].href);
 
 console.log(link[0].target);
+
+link[0].setAttribute("style", "padding: 20px; background-color: brown");
+
+link[0].style.color = "green";
+
+link[0].style.backgroundColor = "blue"; // background-color must be converted to backgroundColor
+
