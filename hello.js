@@ -1,18 +1,21 @@
-var Flat = function(numberOfRooms, furnitures) {
+var myDate = new Date();
+console.log(myDate);
+document.write(myDate);
 
-    this.numberOfRooms = numberOfRooms;
-    this.furnitures = furnitures;
-    this.location = function(code, city){console.log("Poland " + " " + code + " " + city)};
-    this.test = function(){console.log(this)};
-    this.infoOnLocation = function(){console.log(this.location())};
-
-};
-
-var myFlat1 = new Flat(4, "sofa");
-var myFlat2 = new Flat(5, "chairs");
-var myFlat3 = new Flat(2, "table");
-
-
-myFlat2.location("83-000", "Pruszcz");
-myFlat2.infoOnLocation();
-console.log(myFlat2.furnitures);
+var myBirthday = new Date(1977, 9, 11, 9, 30, 25); //moths are counted fomr 0 to 11
+document.write(myBirthday.getFullYear());
+document.write(" ");
+document.write(myBirthday.getMonth());
+document.write(" ");
+document.write(myBirthday.getDate());
+document.write(" ");
+document.write(myBirthday.getDay());
+document.write(" ");
+document.write(myBirthday.getHours());
+document.write(" ");
+document.write(myBirthday.getMinutes());
+document.write(" ");
+document.write(myBirthday.getTime());
+document.write(" ");
+document.write(myBirthday.getSeconds());
+document.write(" ");
