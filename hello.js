@@ -1,16 +1,15 @@
-var myBody = document.getElementsByTagName("body");
+var link = document.getElementsByTagName("a");
 
-console.log(myBody[0].innerHTML);
+console.log(link[0]);
 
-var div_tag = myBody[0].getElementsByTagName("div");
+console.log(link[0].getAttribute("href"));
 
-console.log(div_tag[0]);
+console.log(link[0].getAttribute("alt"));
 
-var p_tag = div_tag[0].getElementsByTagName("p");
+link[0].setAttribute("id", "link-id");
 
-console.log(p_tag);
+link[0].setAttribute("style", "color: red;");
 
-p_tag[4].innerHTML = "Next change"
-console.log(p_tag[0].textContent);
+console.log(link[0].href);
 
-p_tag[0].textContent = "Easy busy lemon squeezer";
+console.log(link[0].target);
