@@ -1,9 +1,30 @@
-var myString = "I\'m writing some 'string' text";
+var myArray = new Array();
 
-var string2 = myString.slice(3,24);
+myArray[0] = 7;
+myArray[1] = "text";
+myArray[3] = true;
 
-console.log(string2);
+console.log(myArray);
+console.log(myArray.length);
+console.log(typeof(myArray[2]));
 
-var string3 = myString.split(" "); //array is obtained
+var flat = new Object();
 
-console.log(string3);
+flat.numberOfRooms = 4;
+flat.furnitures = "sofa";
+flat.location = function(){console.log("Pomeranian")};
+
+document.write(flat.numberOfRooms);
+document.write(flat.furnitures);
+flat.location();
+
+var flat2 = {
+
+    numberOfRooms: 5,
+    furnitures: "chairs",
+    location: function(code, city){console.log("Poland " + " " + code + " " + city)}
+
+};
+
+console.log(flat2.furnitures);
+flat2.location("83-000", "Gdansk");
