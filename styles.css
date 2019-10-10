@@ -1,0 +1,23 @@
+#content.test{
+    width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    margin: auto;
+    background-color: bisque;
+    float: left;
+}
+
+#content.open{
+    width: 200px;
+    max-height: 1000px;
+    margin: auto;
+    background-color: bisque;
+    float: left;
+}
+
+a{
+    background: red;
+    padding: 10px;
+    color: white;
+
+}

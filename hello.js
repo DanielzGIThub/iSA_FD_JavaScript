@@ -1,9 +1,19 @@
-var get_head = document.getElementById("678");
+var content = document.getElementById("content");
 
-get_head.onclick = function(){alert("You clicked the heading");};
+console.log(content);
 
-var get_p = document.getElementsByTagName("div")[0].getElementsByTagName("p")[4];
+var button = document.getElementById("button");
 
-console.log(get_p);
 
-get_p.onmouseover = function(){alert("you hovered me");};
+
+button.onclick = function(){
+
+    if(content.className == "open"){
+        content.className = "test";
+        button.innerHTML = "Show More";
+    } else if(content.className == "test"){
+        content.className = "open";
+        console.log(content);
+        button.innerHTML = "Show Less";
+    }
+};
