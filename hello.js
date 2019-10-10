@@ -21,3 +21,8 @@ new_a.innerHTML = "shutterstock"
 get_ul[0].insertBefore(new_li2, get_ul[0].getElementsByTagName("li")[1]);
 
 new_li2.appendChild(new_a2);
+
+var removed_li = get_ul[0].removeChild(get_ul[0].getElementsByTagName("li")[4]);
+
+get_ul[0].appendChild(removed_li);
+
