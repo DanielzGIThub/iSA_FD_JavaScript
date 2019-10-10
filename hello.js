@@ -1,22 +1,23 @@
-var link = document.getElementsByTagName("a");
+var new_li = document.createElement("li");
+var new_li2 = document.createElement("li");
 
-console.log(link[0]);
+var new_a = document.createElement("a");
+var new_a2 = document.createElement("a");
 
-console.log(link[0].getAttribute("href"));
+var get_ul = document.getElementsByTagName("ul");
 
-console.log(link[0].getAttribute("alt"));
+console.log(new_li);
+console.log(new_a);
+console.log(get_ul[0]);
 
-link[0].setAttribute("id", "link-id");
+get_ul[0].appendChild(new_li);
 
-link[0].setAttribute("style", "color: red;");
+new_li.appendChild(new_a);
 
-console.log(link[0].href);
+new_a.href = "https://github.com/DanielzGIThub";
 
-console.log(link[0].target);
+new_a.innerHTML = "shutterstock"
 
-link[0].setAttribute("style", "padding: 20px; background-color: brown");
+get_ul[0].insertBefore(new_li2, get_ul[0].getElementsByTagName("li")[1]);
 
-link[0].style.color = "green";
-
-link[0].style.backgroundColor = "blue"; // background-color must be converted to backgroundColor
-
+new_li2.appendChild(new_a2);
